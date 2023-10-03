@@ -1072,10 +1072,11 @@ header .sound .equalizer .holder {
 .navbar a {
   color: #fff;
 }
+/*
 .navbar .left {
   width: 30%;
   margin-left: 0;
-}
+}*/
 .navbar .left a {
   position: relative;
   padding-bottom: 6px;
@@ -1091,6 +1092,7 @@ header .sound .equalizer .holder {
   border-bottom: 2px solid #fff;
   text-decoration: none;
 }
+/*
 .navbar .logo {
   margin: 0 auto;
 }
@@ -1099,7 +1101,7 @@ header .sound .equalizer .holder {
 }
 .navbar .logo a img {
   height: 56px;
-}
+} */
 .navbar .right {
   width: 30%;
   margin-right: 0;
