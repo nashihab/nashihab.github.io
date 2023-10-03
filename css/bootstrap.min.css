@@ -4543,15 +4543,13 @@ input[type=submit].btn-block {
 
 .navbar {
     position: relative;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
+    justify-content: space-around;
+    padding: 0.5rem 1rem;
+    flex-direction: row;
+    align-content: flex-end;
     align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: .5rem 1rem
+    flex-wrap: nowrap;
 }
 
 .navbar>.container,

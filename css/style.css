@@ -177,6 +177,13 @@ section {
 .page-loaded .navbar {
   transform: translateY(0);
   transition-delay: 0.75s;
+  background: linear-gradient(135deg, rgb(0 0 0 / 55%), rgb(0 0 0 / 60%));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  position: fixed;
 }
 
 /* PRELOADER */
