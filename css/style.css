@@ -46,6 +46,14 @@ theme.
 
 
 
+
+
+
+
+
+
+
+
 */
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Fjalla+One|Poppins:400,600,800&amp;subset=latin-ext");
 /* BODY */
@@ -72,6 +80,12 @@ img {
 /* CUSTOM ELEMENTS */
 .overflow {
   overflow: hidden !important;
+}
+
+
+
+.about-me-img{
+align-items: center;
 }
 
 /* LINKS */
