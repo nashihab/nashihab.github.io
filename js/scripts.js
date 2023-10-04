@@ -52,7 +52,7 @@
 			  audio.play();
 			}, true);
 			audio.src = source;
-			audio.autoplay = true;
+			audio.autoplay = false;
 			audio.loop = true;
 			audio.volume = 0.2;
 		
