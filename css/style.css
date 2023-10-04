@@ -2644,7 +2644,9 @@ s .process span:before {
   .container {
     padding: 0 30px;
   }
-
+.preloader{
+max-width: 100%;
+}
   .page-header .video-bg:before {
     display: none;
   }
