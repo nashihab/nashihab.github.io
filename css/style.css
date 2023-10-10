@@ -1988,71 +1988,6 @@ s .process span:before {
   margin-bottom: 0;
 }
 
-/* WORK WITH US */
-.work-with-us {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 150px 0;
-  background: #01f7b6;
-  position: relative;
-}
-.work-with-us:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: url(../images/bg-noise.gif);
-  opacity: 0.04;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.work-with-us:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: url(../images/bg-lines.png) center;
-  z-index: 1;
-}
-.work-with-us .container {
-  position: relative;
-  z-index: 2;
-}
-.work-with-us h6 {
-  display: block;
-  line-height: 1;
-  margin-bottom: 20px;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 14px;
-}
-.work-with-us h2 {
-  margin-bottom: 60px;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 1.2;
-  padding-right: 35%;
-}
-.work-with-us h2:before {
-  content: attr(data-text);
-  font-size: 20vw;
-  opacity: 0.05;
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  top: -20%;
-}
-.work-with-us h4 {
-  margin-top: 5px;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 25px;
-  line-height: 40px;
-  text-transform: uppercase;
-  padding-right: 20%;
-  margin-bottom: 40px;
-}
 
 /* AWARDS  */
 .awards {
@@ -2523,8 +2458,8 @@ s .process span:before {
   flex-wrap: wrap;
   flex-direction: column;
   padding: 100px 0;
-  background: #0e0e0e;
   color: #fff;
+  background-image: url(/images/y.jpg);
 }
 .footer .footer-quote {
   width: 100%;
