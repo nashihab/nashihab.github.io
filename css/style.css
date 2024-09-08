@@ -1247,8 +1247,9 @@ header .sound .equalizer .holder {
 } */
 .navbar .right {
   width: 30%;
-  margin-right: 0px;
+  margin-right: 152px;
   display: flex;
+  align-items: center;
 }
 .navbar .right ul {
   margin-left: auto;
