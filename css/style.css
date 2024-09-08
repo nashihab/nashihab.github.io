@@ -1213,7 +1213,7 @@ header .sound .equalizer .holder {
 }
 .navbar a {
   color: #fff;
-  font-size: medium;
+  font-size: 16px;
 }
 /*
 .navbar .left {
@@ -1246,8 +1246,8 @@ header .sound .equalizer .holder {
   height: 56px;
 } */
 .navbar .right {
-  width: 30%;
-  margin-right: 0;
+  width: 20%;
+  margin-right: 60px;
   display: flex;
 }
 .navbar .right ul {
