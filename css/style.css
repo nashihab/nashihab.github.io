@@ -1246,8 +1246,8 @@ header .sound .equalizer .holder {
   height: 56px;
 } */
 .navbar .right {
-  width: 20%;
-  margin-right: 60px;
+  width: 30%;
+  margin-right: 0px;
   display: flex;
 }
 .navbar .right ul {
