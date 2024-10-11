@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="css/fancybox.min.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <style>
     .works-single {
       padding: 100px 0;
@@ -37,7 +37,7 @@
     }
     .works-single .row {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       flex-wrap: wrap;
     }
     .works-single .col-lg-6 {
@@ -51,14 +51,14 @@
       border-radius: 10px;
       margin-bottom: 20px;
     }
-    .works-single iframe {
-      width: 100%;
-      height: 315px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
+
     .works-single h4 {
       font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .works-single h2 {
+      font-size: 36px;
       font-weight: bold;
       margin-bottom: 10px;
     }
@@ -67,8 +67,40 @@
       color: #666;
       margin-bottom: 20px;
     }
+    .works-single iframe {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Add this CSS to make the layout responsive */
+    @media (max-width: 768px) {
+      .works-single .row {
+        flex-direction: column;
+      }
+      .works-single .col-lg-6 {
+        flex-basis: 100%;
+      }
+    }
+    .works-single .content {
+      padding: 20px;
+    }
+
+    .works-single .col-lg-6:first-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .works-single h4, .works-single h2 {
+      margin-bottom: 10px;
+    }
   </style>
 </head>
+
+<!-- Rest of your HTML code remains the same -->
 
 <body>
   <div class="preloader">
@@ -90,7 +122,7 @@
   </div>
   <!-- end transition-overlay -->
   <div class="navigation-menu">
-    <div class="bg-layers"> <span></span> <span></span> <span></span> <span></span> </div>
+ <div class="bg-layers"> <span></span> <span></span> <span></span> <span></span> </div>
     <!-- end bg-layers -->
     <div class="inner" data-tilt data-tilt-perspective="2000">
       <div class="menu">
@@ -100,13 +132,13 @@
               <li><a href="index-2.html">Slider</a></li>
               <li><a href="index-video.html">Video</a></li>
               <li><a href="index-particles.html">Particles</a></li>
-              <li><a href="index-perspective.html">Perspective</ a></li>
+              <li><a href="index-perspective.html">Perspective</a></li>
             </ul>
           </li>
           <li><a href="works.html">WORKS</a></li>
           <li><a href="index.html">HOME</a></li>
-          <li>< a href="research.html">Research</a></li>
-          <li><a href="awards .html">AWARDS</a></li>
+          <li><a href="./rp.html">Research</a></li>
+          <li><a href="awards.html">AWARDS</a></li>
         </ul>
       </div>
       <!-- end menu -->
@@ -126,7 +158,7 @@
         <li><a href="#works1">Awards</a></li>
       </ul>
       <div class="hamburger-menu"><b>MENU</b>
-        <div class="hamburger" id ="hamburger-menu"> <span></span> <span></span> <span></span> </div>
+        <div class="hamburger" id="hamburger-menu"> <span></span> <span></span> <span></span> </div>
       </div>
       <!-- end hamburger-menu --> 
     </div>
@@ -168,53 +200,65 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h4>SMOOTH INTERFACE INTERACTION</h4>
-          <h2>Karamell Kaffein</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <div class="content">
+            <h4>AUTONOMOUS DRONE</h4>
+            <h2>BRACU RAVEN</h2>
+            <p>LorLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibuLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibuLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibuLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibuLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibuLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibuLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibuem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
         </div>
         <div class="col-lg-6">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/zbLNA7-hDzk?si=zXYvC44COO4hppIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <img src="images/project1.jpg" alt="Image">
-          <img src="images/project2.jpg" alt="Image">
+          <div class="content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zbLNA7-hDzk?si=0_RqI9cMEWNRMX7R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <img src="images/f2.jpg" alt="Image">
+            <img src="images/awards01.png" alt="Image">
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- end works-single -->
 
-  <section id="works2" class="works-single">
+  <section id ="works2" class="works-single">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h4>GAME ENVIRONMENT DESIGN</h4>
-          <h2>Game Demo</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <div class="content">
+            <h4>GAME ENVIRONMENT DESIGN</h4>
+            <h2>Game Demo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
         </div>
         <div class="col-lg-6">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/l_3wIGkym84?si=ROdkNmN_A2KBxIw-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          <img src="images/project5.jpg" alt="Image">
-          <img src="images/project6.jpg" alt="Image">
+          <div class="content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l_3wIGkym84?si=wNnaM_gjBaJtYdxl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <img src="images/project5.jpg" alt="Image">
+            <img src="images/project6.jpg" alt="Image">
+          </div>
         </div>
-      </div >
+      </div>
     </div>
   </section>
-  <!-- end works-single -->
 
   <section id="works3" class="works-single">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h4>AUTONOMOUS UNDERWATER VEHICLE</h4>
-          <h2>BRACU DUBURI</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <div class="content">
+            <h4>AUTONOMOUS UNDERWATER VEHICLE</h4>
+            <h2>BRACU DUBURI</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
         </div>
         <div class="col-lg-6">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/4cY_AEiob-U?si=Jhguh1clFLKi0yBG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          <img src="images/project9.jpg" alt="Image">
-          <img src="images/project10.jpg" alt="Image">
+          <div class="content">
+            <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <img src="images/project9.jpg" alt="Image">
+            <img src="images/project10.jpg" alt="Image">
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- end works-single -->
+
   <footer class="footer">
     <div class="footer-quote wow fadeIn">
       <div class="container">
@@ -264,7 +308,7 @@
   <script src="js/jquery.typewriter.js"></script>
   <script src="js/fancybox.min.js"></script> 
   <script src="js/app.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>
