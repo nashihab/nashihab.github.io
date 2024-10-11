@@ -1764,6 +1764,7 @@ s .process span:before {
   padding: 150px 0;
   transition-delay: 0s !important;
   transition: background 0.4s;
+  background: url(../images/pattern-bg.svg);
 }
 .works h6 {
   display: block;
