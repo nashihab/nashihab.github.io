@@ -2431,7 +2431,8 @@ s .process span:before {
   flex-direction: column;
   padding: 100px 0;
   color: #fff;
-  background-image: url(/images/y.jpg);
+  background-image: url(/images/x.jpg);
+  background-repeat: no-repeat;
 }
 .footer .footer-quote {
   width: 100%;
