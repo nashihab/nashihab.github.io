@@ -1535,9 +1535,9 @@ header .sound .equalizer .holder {
 .intro h2 {
   margin-bottom: 60px;
   font-weight: 800;
-  font-size: 60px;
+  font-size: 45px;
   line-height: 1.2;
-  padding-right: 35%;
+  padding-right: 0%;
 }
 .intro h2:before {
   content: attr(data-text);
@@ -2875,12 +2875,12 @@ s .process span:before {
   }
 
   .team h2 {
-    font-size: 32px;
+    font-size: 22px;
     margin-bottom: 20px;
   }
 
   .intro h2 {
-    font-size: 32px;
+    font-size: 22px;
     margin-bottom: 20px;
   }
 
