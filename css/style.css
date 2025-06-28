@@ -70,7 +70,6 @@ body {
 
 
 
-
 /* CUSTOM HTML ELEMENTS */
 img {
   max-width: 100%;
@@ -1198,7 +1197,7 @@ header .sound .equalizer .holder {
 }
 .navbar .left a:hover {
   padding-bottom: 1px;
-  border-bottom: 2px solid #fff;
+  /*border-bottom: 2px solid #fff; */
   text-decoration: none;
 }
 /*
